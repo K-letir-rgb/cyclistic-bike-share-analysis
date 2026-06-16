@@ -1,0 +1,11 @@
+import pandas as pd
+df_2019 = pd.read_csv("data/Divvy_Trips_2019_Q1.csv")
+df_2020 = pd.read_csv("data/Divvy_Trips_2020_Q1.csv")
+print("2019 usertype values:", df_2019["usertype"].unique())
+print("2020 member_casual values:", df_2020["member_casual"].unique())
+print()
+print("2019 sample row:")
+print(df_2019.head(1).to.string())
+print()
+print("2020 sample row:")
+print(df_2020.head(1).to_string())
